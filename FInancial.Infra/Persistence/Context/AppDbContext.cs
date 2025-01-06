@@ -2,7 +2,6 @@ using Microsoft.EntityFrameworkCore;
 
 namespace FInancial.Infra.Persistence.Context;
 
-public class AppDbContext : DbContext
+public class AppDbContext(DbContextOptions<AppDbContext> options) : DbContext(options)
 {
-    
 }
