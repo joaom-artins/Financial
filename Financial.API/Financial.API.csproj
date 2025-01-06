@@ -10,4 +10,10 @@
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\FInancial.Application\FInancial.Application.csproj" />
+    <ProjectReference Include="..\Financial.Entities\Financial.Domain.csproj" />
+    <ProjectReference Include="..\FInancial.Infra\FInancial.Infra.csproj" />
+  </ItemGroup>
+
 </Project>

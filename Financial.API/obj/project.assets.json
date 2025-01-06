@@ -33,6 +33,39 @@
             "related": ".pdb;.xml"
           }
         }
+      },
+      "FInancial.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Financial.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/FInancial.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FInancial.Application.dll": {}
+        }
+      },
+      "Financial.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/Financial.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Financial.Domain.dll": {}
+        }
+      },
+      "FInancial.Infra/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/FInancial.Infra.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FInancial.Infra.dll": {}
+        }
       }
     }
   },
@@ -67,10 +100,28 @@
         "microsoft.openapi.1.6.17.nupkg.sha512",
         "microsoft.openapi.nuspec"
       ]
+    },
+    "FInancial.Application/1.0.0": {
+      "type": "project",
+      "path": "../FInancial.Application/FInancial.Application.csproj",
+      "msbuildProject": "../FInancial.Application/FInancial.Application.csproj"
+    },
+    "Financial.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Financial.Entities/Financial.Domain.csproj",
+      "msbuildProject": "../Financial.Entities/Financial.Domain.csproj"
+    },
+    "FInancial.Infra/1.0.0": {
+      "type": "project",
+      "path": "../FInancial.Infra/FInancial.Infra.csproj",
+      "msbuildProject": "../FInancial.Infra/FInancial.Infra.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net9.0": [
+      "FInancial.Application >= 1.0.0",
+      "FInancial.Infra >= 1.0.0",
+      "Financial.Domain >= 1.0.0",
       "Microsoft.AspNetCore.OpenApi >= 9.0.0"
     ]
   },
@@ -105,7 +156,17 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\joaom\\OneDrive\\Área de Trabalho\\Arquivos\\FinancialApp\\FInancial.Application\\FInancial.Application.csproj": {
+              "projectPath": "C:\\Users\\joaom\\OneDrive\\Área de Trabalho\\Arquivos\\FinancialApp\\FInancial.Application\\FInancial.Application.csproj"
+            },
+            "C:\\Users\\joaom\\OneDrive\\Área de Trabalho\\Arquivos\\FinancialApp\\Financial.Entities\\Financial.Domain.csproj": {
+              "projectPath": "C:\\Users\\joaom\\OneDrive\\Área de Trabalho\\Arquivos\\FinancialApp\\Financial.Entities\\Financial.Domain.csproj"
+            },
+            "C:\\Users\\joaom\\OneDrive\\Área de Trabalho\\Arquivos\\FinancialApp\\FInancial.Infra\\FInancial.Infra.csproj": {
+              "projectPath": "C:\\Users\\joaom\\OneDrive\\Área de Trabalho\\Arquivos\\FinancialApp\\FInancial.Infra\\FInancial.Infra.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
