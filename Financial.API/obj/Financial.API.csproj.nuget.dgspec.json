@@ -202,6 +202,16 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -249,7 +259,11 @@
         "frameworks": {
           "net9.0": {
             "targetAlias": "net9.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\joaom\\OneDrive\\Área de Trabalho\\Arquivos\\FinancialApp\\Financial.Entities\\Financial.Domain.csproj": {
+                "projectPath": "C:\\Users\\joaom\\OneDrive\\Área de Trabalho\\Arquivos\\FinancialApp\\Financial.Entities\\Financial.Domain.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

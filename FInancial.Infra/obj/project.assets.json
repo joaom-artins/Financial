@@ -2089,6 +2089,20 @@
             "rid": "win"
           }
         }
+      },
+      "Financial.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.Identity": "2.2.0",
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "9.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Financial.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Financial.Domain.dll": {}
+        }
       }
     }
   },
@@ -5653,10 +5667,16 @@
         "system.windows.extensions.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "Financial.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Financial.Entities/Financial.Domain.csproj",
+      "msbuildProject": "../Financial.Entities/Financial.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net9.0": [
+      "Financial.Domain >= 1.0.0",
       "Microsoft.AspNetCore.Identity >= 2.2.0",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 9.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 9.0.0",
@@ -5695,7 +5715,11 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\joaom\\OneDrive\\Área de Trabalho\\Arquivos\\FinancialApp\\Financial.Entities\\Financial.Domain.csproj": {
+              "projectPath": "C:\\Users\\joaom\\OneDrive\\Área de Trabalho\\Arquivos\\FinancialApp\\Financial.Entities\\Financial.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
